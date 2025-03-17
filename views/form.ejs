@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 7px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: calc(100% - 10px); /* Memberikan jarak di kiri */
+            margin-top: 15px;
+            margin-left: 5px; /* Menambah jarak di sisi kiri */
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Masukkan Data</h2>
+        <form action="/submit" method="POST">
+            <label>Nama:</label>
+            <input type="text" name="name" required>
+            <br>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
